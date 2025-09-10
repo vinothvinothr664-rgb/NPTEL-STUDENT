@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NPTEL Student Record</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>NPTEL Student Record</h1>
+
+    <!-- Form to Add Records -->
+    <form id="studentForm">
+      <input type="text" id="name" placeholder="Student Name" required>
+      <input type="text" id="course" placeholder="Course Name" required>
+      <input type="number" id="score" placeholder="Score (%)" required>
+      <button type="submit">Add Record</button>
+    </form>
+
+    <!-- Search Input -->
+    <input type="text" id="search" placeholder="Search by Name or Course">
+
+    <!-- Table to Display Records -->
+    <table id="studentTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Course</th>
+          <th>Score</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Records will appear here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
